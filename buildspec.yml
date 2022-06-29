@@ -1,14 +1,24 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo "installing something" 
+  pre_build:
+    commands:
+      - printenv
+      - echo "we are ni the pre build phase" 
   build:
     commands:
       - echo Entered the build phase...
-      - mvn install -DiskTests
+      - echo Build started for some tests
+      - grep -Fq "Congrajulations" index.html
   post_build:
     commands:
-      - echo Build completed successfully
+      - echo Entered the post_build phase..
 artifacts:
-  files:
-    - target/flowmax.jar
-  discard-paths: yes
+    files:
+      - '**/*'
+    name: my-webapp-artifact
