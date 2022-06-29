@@ -20,4 +20,4 @@ phases:
 artifacts:
     files:
       - '**/*'
-    name: my-webapp-artifact
+    name: flowmax
