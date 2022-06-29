@@ -4,6 +4,7 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
+      - mvn install -DiskTests
   post_build:
     commands:
       - echo Build completed successfully
