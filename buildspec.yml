@@ -20,4 +20,5 @@ phases:
 artifacts:
     files:
       - '**/*'
-    name: flowmax
+    name: 
+      - flowmax
