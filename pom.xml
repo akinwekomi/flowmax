@@ -8,11 +8,11 @@
 		<version>2.3.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.javatechie</groupId>
+	<groupId>com.akinwekomi</groupId>
 	<artifactId>flowmax</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>flowmax</name>
-	<description>Web deployment CI/CD using AWS CodePipeline</description>
+	<description>flowmax CI/CD using AWS CodePipeline</description>
 
 	<properties>
 		<java.version>1.8</java.version>
